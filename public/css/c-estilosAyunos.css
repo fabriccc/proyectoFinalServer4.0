@@ -1,0 +1,451 @@
+/*pelon*/
+div{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-centrado{
+	justify-content: center;
+}
+select{
+	border: 1px solid;
+}
+input{
+	border: 1px solid;
+}
+button{
+	border: 1px solid;
+}
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+	position: fixed;
+}
+	
+
+.logo{
+	width: 100px;
+}
+
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 1.5px;
+}
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+
+input{
+	border-radius: 30px;
+	padding: 10px;
+	padding-left: 30px;
+}
+
+input:hover{
+	color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+
+
+
+.banner-1{
+	--opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/banner-ayunos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding-bottom: 400px;
+	padding-top: 300px;
+	text-align: center;
+	color: white;
+	
+}
+
+
+
+.registro{
+	padding-top: 50px;
+}
+
+
+.ayuno-tipo{
+	width: 33%;
+}
+
+.inputs-ayunos, .fechas, .inputs-hora, .hora-2{
+	width: 24%;
+	text-align: center;
+}
+
+.inputs-ayunos select{
+	border-radius: 30px;
+	padding: 10px;
+	border-color: #000000;
+}
+
+.historial-completos, .registros-ayunos{
+	width: 50%;
+}
+
+.registros-ayunos{
+	text-align: center;
+}
+
+
+.historial-ayunos{
+	text-align: center;
+	padding-left: 50px;
+}
+
+.ayuno-tipo select{
+	border-radius: 30px;
+	padding: 10px;
+	border-color: #000000;
+}
+
+.horas-inicio-fin p{
+	text-align: center;
+}
+.boton-registro{
+	padding-top: 50px;
+	padding-left: 42%;
+}
+
+.boton-registro button{
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius: 30px;
+	color: #000000;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.boton-registro button:hover{
+	color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+.historial-ayunos select{
+	border-radius: 30px;
+	padding: 10px;
+	border-color: #000000;
+}
+.historial-ayunos{
+	padding-top: 50px;
+	padding-left: 10%;
+}
+
+.historial-ayunos h1{
+	padding-left: 50px;
+}
+
+.historial-ayunos option{
+	padding-top: 500px;
+	
+}
+
+.input-historial{
+	padding-left: 14%;
+	padding-top: 14%;
+}
+.boton-historial{
+	padding-top: 50px;
+	text-align: center;
+	padding-left: 43%;
+}
+.boton-historial button{
+	display: block;
+	width: 100px;
+	height: 50px;
+	border-radius: 30px;
+	color: #000000;
+	border: none;
+	cursor: pointer;
+}
+
+.boton-historial button:hover{
+	color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+footer{
+    padding-top: 3%;
+}
+
+
+.titulo-contacto{
+    text-align: center;
+}
+
+
+.titulo-contacto{
+	color: #000000;
+}
+
+.footer-logo{
+    width: 50%;
+	padding-left:3%;
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+
+.contacto a{
+	padding-left: 2%;
+	cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+ }
+ 
+
+ .contacto img{
+	width:6%;
+	}
+
+
+
+
+@media screen and (max-width: 767px){
+	nav{
+		width: 100%;
+		position: relative;
+	}
+
+	.nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+	
+	
+	.menu-horizontal{
+		padding: 0px;
+		
+	}
+	.menu-horizontal > li > a{
+		padding: 0px ;
+	
+		
+	}
+	.menu-horizontal > li {
+		width: 20%;
+		
+	}
+
+	.menu-horizontal li:hover .menu-vertical{
+		margin-top: 5px;
+	}
+	#fecha{
+		padding: 10px 0px;
+		margin-left: 20px;
+	}
+
+	.banner-1 p{
+		margin-top: 0px;
+	}
+
+	.banner-1{
+		width: 100%;
+		padding: 120px;
+	}
+
+	.banner-1 h1{
+		margin: 10px;
+	}
+	.registro{
+		width: 100%;
+	}
+	.registro h1{
+		margin: 20px;
+		width: 100%;
+		margin-left: 50%;
+	}
+
+	.ayuno-tipo{
+		width: 100%;
+		text-align: center;
+	}
+	.inputs-ayunos{
+		width: 100%;
+		text-align: center;
+		margin-left: 70%;
+	}
+
+	.fechas{
+		width: 100%;
+		text-align: center;
+		margin-left: 60%;
+	}
+	.inputs-hora{
+		width: 100%;
+		margin-left: 70%;
+	}
+	.hora-2{
+		width: 100%;
+		margin-left: 70%;
+	}
+	.historial-ayunos{
+		width: 100%;
+		margin: 10px;
+	}
+
+	.historial-ayunos h1{
+		width: 50%;
+		margin-left: 2%;
+	}
+
+	.horas-inicio-fin{
+		width: 100%;
+		text-align: center;
+	}
+	.boton-registro{
+		width: 100%;
+		margin-left: 30%;
+	}
+	 .input-historial{
+		width: 100%;
+		margin-left: -52px;
+	}
+
+	.boton-historial{
+		width: 100%;
+		margin-left: -52px;
+	}
+	.footer{
+		width: 100%;
+	}
+
+
+	.footer-logo h6{
+		display: none;
+	}
+
+	.footer-logo{
+		width: 15%;
+		padding-left: 0px;
+	}
+	.footer-logo img{
+		width: 120px;
+	}
+	.contacto{
+		width: 85%;
+		padding-left: 100px;
+	
+	}
+
+	.contacto img{
+		width: 33px;
+ 
+
+	}
+
+    .titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+	}
+
+
+}

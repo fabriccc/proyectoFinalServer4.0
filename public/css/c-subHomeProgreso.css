@@ -1,0 +1,361 @@
+
+div{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+  
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	z-index: 10000;
+}
+	
+
+.logo{
+	width: 100px;
+}
+
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 0.5px;
+}
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+
+/*GRAFICOS PROGRESO*/
+
+.grafico-progreso{
+	text-align: center;
+}
+ 
+.pesos{
+	text-align: center;
+	padding-bottom: 0.5%;
+ }
+
+
+
+.capa-progreso{
+    padding-bottom: 100px;
+    background-repeat:no-repeat;
+    background-position:top;
+	text-align: center;
+    padding-top: 200px;
+
+}
+
+.contenedor{
+	width: 50%;
+}
+
+form {
+	padding: 20px;
+	display: flex;
+	padding-left: 20%;
+}
+
+
+input {
+	text-align: center;
+	padding: 6px;
+	margin: 0.5%;
+	width: 42%;
+	border-radius: 30px;
+	border: 1px solid black;
+}
+
+
+
+button{
+	border: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin:1%;
+	border-radius: 30px;
+	cursor: pointer;
+	
+}
+
+.mostrar-resultados{
+	width: 100%;
+}
+.agregar-peso{
+	width: 100%;
+}
+
+.botones{
+	padding-top: 0.2%;
+	width: 17%;
+}
+
+button:hover{
+	color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+
+/*GRAFICO METAS*/
+
+.capa-metas{
+	margin-top: 2%;
+}
+
+.meta{
+	text-align: center;
+}
+
+/*FOOTER*/
+
+.titulo-contacto{
+    text-align: center;
+}
+
+
+
+footer{
+    padding-top: 50px;
+}
+
+.footer-logo{
+    width: 50%;
+	padding-left: 3%;
+
+}
+
+
+.footer-logo img{
+    width: 20%;
+}
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+
+.contacto a{
+   padding-left: 2%;
+   cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+}
+
+.contacto img{
+    width: 6%;
+}
+
+@media screen and (max-width: 767px){
+	nav{
+		width: 100%;
+		
+	}
+	.nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+	
+	
+	.menu-horizontal{
+		padding: 0px;
+		text-align: center;
+	}
+	.menu-horizontal > li > a{
+		padding: 0px ;
+		
+	}
+	.menu-horizontal > li {
+		width: 20%;
+		
+	}
+
+	.menu-horizontal li:hover .menu-vertical{
+		margin-top: 0.5px;
+	}
+
+	/*GRAFICOS*/
+
+	.contenedor{
+		width: 100%;
+		padding-top: 4%;
+	}
+	form {
+        padding: 20px;
+        display: flex;
+        margin-right: 0px;
+    }
+    .capa-progreso{
+        padding: 0px;
+		padding-top: 230px;
+    }
+    
+
+	.pesos{
+	text-align: center;
+	}
+
+
+	input{
+		margin: 2px;
+		width: 40%;
+	}
+
+	.botones{
+		width: 40%;
+		padding-top: 5%;
+		
+	}
+
+	button{
+		padding: 0px;
+		padding-bottom: 1%;
+	}
+
+	.meta{
+		text-align: center;
+	}
+
+	
+	/*FOOTER*/
+	.footer{
+		width: 100%;
+	}
+
+
+	.footer-logo h6{
+		display: none;
+	}
+
+	.footer-logo{
+		width: 15%;
+		padding-left: 0px;
+	}
+	.footer-logo img{
+		width: 120px;
+	
+	}
+
+	.buttons{
+		margin-top: -30px;
+		
+	}
+
+
+	.contacto{
+		width: 85%;
+		padding-left: 100px;
+		margin-top: -30px;
+	
+	}
+
+	.contacto img{
+		width: 33px;
+ 
+
+	}
+
+    .titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+	}	
+
+    
+
+	 
+
+}

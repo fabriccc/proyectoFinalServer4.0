@@ -1,0 +1,430 @@
+div{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+  
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+	position: fixed;
+}
+	
+
+.logo{
+	width: 100px;
+}
+
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 1.5px;
+}
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+
+
+.banner-1{
+	padding-bottom: 30px;
+	padding-top: 200px;
+}
+
+.banner-1 p{
+	margin-top: 0px;
+}
+.seccion, .seccion-2{
+	width: 50%;
+	text-align: center;
+}
+.seccion{
+	margin-top: 6%;
+	margin-bottom: 2%;
+}
+.seccion-2{
+	margin-top: 2%;
+	padding-bottom: 1px;
+}
+.seccion-3-a, .seccion-3-b{
+	width: 50%;
+	margin-top: 6%;
+	padding-bottom: 1px;
+}
+.seccion-3-a{
+	text-align: right;
+	padding-right: 1%;
+}
+.seccion-3-b{
+	text-align: left;
+	padding-left: 1%;
+}
+.boton{
+	text-align: center;
+}
+.boton-info{
+	height: 15%;
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 3%;
+	text-align: center;
+	padding-top: 2%;
+	border-radius: 10px;
+	font-size: large;
+}
+
+.capa-display{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#display-image{
+	width:100%;
+	height: 200px;
+	border: 1px solid black;
+	background-position: center;
+	background-size: cover;
+  }
+
+.input-select{
+	border-radius: 30px;
+}
+
+#mensaje{
+	color: red;
+	font-size: 20px;
+}
+
+
+input, textarea{
+	border-radius: 30px;
+	padding: 10px 40px;
+}
+.imagen-receta{
+	height: 80%;
+	width: 60%;
+	margin-left: 3%;
+}
+.boton-guardar{
+    width: 20%;
+}
+.boton-cancelar{
+    width: 20%;
+}
+.boton-guardar, .boton-cancelar {
+	background-color: white;
+	border-radius: 20px;
+	color: #000000;
+	text-align: center;
+	border: 1px solid black;
+}
+.boton-guardar:hover, .boton-cancelar:hover {
+    color:  black;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+.boton-guardar input, .boton-cancelar input {
+    text-decoration: none;
+    color: #000000;
+}
+.texto-recetas{
+	text-align: center;
+	font-size: large;
+	color: black;
+	margin-top: 8%;
+}
+.seccion input{
+	width: 50%;
+	height: 40px;
+	margin-bottom: 4%;
+	padding: 10px 10px;
+}
+.fotos-receta{
+	width: 100px;
+	height: 90px;
+}
+.seccion select{
+	width: 15%;
+	height: 20px;
+}
+.seccion-2 input, .seccion-2 textarea{
+	width: 50%;
+	height: 40px;
+	margin-bottom: 2%;
+}
+input, textarea{
+	border: 1px solid black;
+}
+.lista-recetas{
+	padding-left: 30%;
+	width: 100%;
+	padding-bottom: 200px;
+}
+.fondo-recetas{
+	width: 100%;
+	margin-top: -60px;
+}
+.fondo-recetas img{
+	width: 100%;
+}
+.imagen-receta{
+	width: 25%;
+	height: 50%;
+}
+footer{
+    padding-top: 3%;
+	
+}
+.titulo-contacto {
+    text-align: center;
+    border-radius: 10px;
+	color: black;
+}
+
+.footer-logo{
+    width: 50%;
+	padding-left: 3%;
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+.contacto a{
+   padding-left: 2%;
+   cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+}
+
+.contacto img{
+    width: 6%;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+	nav{
+		width: 100%;
+		position: relative;
+	}
+
+	.nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+	.capa-display{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	#display-image{
+		width:100%;
+		height: 100px;
+		border: 1px solid black;
+		background-position: center;
+		background-size: cover;
+	  }
+	
+	
+	.menu-horizontal{
+		padding: 0px;
+		
+	}
+	.menu-horizontal > li > a{
+		padding: 0px ;
+	
+		
+	}
+	.menu-horizontal > li {
+		width: 20%;
+		
+	}
+
+	.menu-horizontal li:hover .menu-vertical{
+		margin-top: 5px;
+	}
+	.banner-1{
+		padding-top: 50px;
+	}
+
+	.banner-1 p{
+		margin-top: 0px;
+	}
+
+	.footer{
+		width: 100%;
+	}
+
+	#tablaHistorial{
+		padding-left: 0;
+		margin: 0;
+	}
+	.lista-recetas{
+		padding-left: 0px;
+		margin: 0px;
+	}
+	.footer-logo h6{
+		display: none;
+	}
+
+	.footer-logo{
+		width: 15%;
+		padding-right: 50px;
+	}
+	.footer-logo img{
+		width: 120px;
+	}
+	.contacto{
+		width: 85%;
+		padding-left: 50px;
+	
+	}
+
+	.contacto img{
+		width: 33px;
+
+	}
+
+	.titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+		margin-left: 31%;
+	}
+	.boton-info{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 10%;
+		width: 60%;
+		margin-left: 30px;
+	}
+	.imagen-receta{
+		height: 60%;
+		width: 80%;
+		margin-left: 3%;
+	}
+	.seccion-2{
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+	.boton-guardar, .boton-cancelar {
+		width: 40%;
+		height: 30px;
+	}
+
+	.entrada-recetas select{
+		margin-top: 10px;
+	}
+	input{
+		padding: 0px;
+	}
+	.seccion input{
+		width: 90%;
+		text-align: center;
+	}
+	.seccion select{
+		width: 60%;
+		height: 20px;
+	}
+	.seccion-2 textarea{
+		width: 90%;
+	}
+}

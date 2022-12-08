@@ -1,0 +1,143 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios</title>
+        <link href="../css/c-estilosEjercicios.css" rel="stylesheet" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script type="module" src="../js/main.js" defer></script>
+        <script src="../js/j-ejercicios.js" type="module" defer></script>
+    </head>
+    <body>
+
+        <!--Menu de navegacion principal-->
+        <nav>
+            <!--LOGO DE EMPRESA Y MENU DESPEGABLE-->
+
+            <div class="wrapper">
+                <div class="nav-logo">
+                    <img src="../img/logo-empresa-cliente.png" alt="">
+                </div>
+
+                <div class="nav-menus">
+
+                    <ul class="menu-horizontal"><!--Contiene el inicio,perfil,mis actividades,progreso y contacto del menu-->
+                        <li><a href="h-subHome.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Perfil</a>
+                            <ul class="menu-vertical"><!--Contiene las secciones que se relacionan con el menu horizontal-->
+                                <li><a href="h-actualizarPerfil.html" target="_parent">Actualizar</a></li>
+                                <li><a href="h-perfil-informacion.html" target="_parent">Informacion</a></li>
+                                <li><a href="h-logros.html" target="_parent">Logros</a></li>
+                                <li><a href="h-homeInicialCliente.html" target="_parent">Cerrar Sesion</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Mis actividades</a>
+                            <ul class="menu-vertical">
+                                <li><a href="h-recetas.html" target="_parent">Recetas</a></li>
+                                <li><a href="h-ayunos.html" target="_parent">Ayunos</a></li>
+                                <li><a href="h-Ejercicios.html" target="_parent">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="h-subHomeProgreso.html" target="_parent">Progreso</a>
+                        </li>
+
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+            <div class="banner-ejercicios">
+                <h1>Ejercicios</h1>
+            </div>
+
+        <div class="wrapper">
+
+                <form class="formulario-completo">
+                    <!--Seccion de registro de los ejercicios-->
+                    <div class="formulario-ejercicio">
+
+                        <div class="informacion">
+                            <h1>Registro de ejercicios</h1>
+                            <input type="text" id="nombre" name="Nombre ejercicio" placeholder="Nombre del ejericio"/><br/>
+                            <input type="time" class="boton-time" id="inicio" name="horas" placeholder="Hora de inicio"/><br/>
+                            <input type="time" class="boton-time" id="fin" placeholder="Hora del final"/><br/>
+                            <input type="text" id="tipo" placeholder="tipo de ejercicio"/><br/>
+                            <div class="fecha">
+                                <input type="date" id="fecha" placeholder="Fecha del ejercicio"/><br/>
+                            </div>
+                        </div>
+                        <div class="wrapper-centrado">
+                            <div class="boton-registrar-ejercicio">
+                                <button type="button" id="registrar">Registrar</button>
+                            </div>
+                            <div class="reset">
+                                <button>Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            <!--Seccion de el historial de los ejerecicios que se han registrados-->
+
+            <div class="historial-completo">
+                    <h1>Historial de ejercicios</h1>
+                        <table border="1" id="tablaHistorial">
+                            <tr>
+                              <td>Nombre</td>
+                              <td>Inicio</td>
+                              <td>Fin</td>
+                              <td>Tipo</td>
+                              <td>Fecha</td>
+                            </tr>
+                          </table>
+            </div>
+
+        </div>
+        <!--Seccion de contacto-->
+
+        <footer class="footer">
+
+            <div class="titulo-contacto" id="contacto"><h1>Contacto</h1></div>
+
+                <div class="wrapper">
+
+                    <div class="footer-logo">
+                        <img src="../img/logo-negro-removebg-preview.png" alt="">
+                        <h6>Derechos reservados de autor<br>Since 2022</h6>
+                    </div>
+
+                    <div class="contacto">
+                        <p>
+                            <a><img src="../img/facebook.png" alt=""></a>
+                            <a><img src="../img/instagram.png" alt=""></a>
+                            <a><img src="../img/twitter.png" alt=""></a>
+                            <a><img src="../img/telefono.png" alt=""></a>
+                        </p>
+                    </div>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

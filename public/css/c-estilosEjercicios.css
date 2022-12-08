@@ -1,0 +1,407 @@
+/*Pelon*/
+div{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.wrapper, .wrapper-centrado{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper-centrado{
+    justify-content: center;
+}
+input{
+    border: 1px solid;
+}
+select{
+    border: 1px solid;
+}
+button{
+    border: 1px solid;
+}
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+    position: fixed;
+}
+
+.logo{
+	width: 100px;
+}
+
+	
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 1.5px;
+}
+
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+
+
+.banner-ejercicios{
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/pelonEjercicios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+}
+
+
+input:hover{
+    color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+button:hover{
+    color:  white;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+.boton-registrar-ejercicio, .reset{
+    padding: 10px;
+    text-align: center;
+}
+
+.boton-registrar-ejercicio button{
+    display: block;
+    color: #000000;
+    border-color: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.reset button{
+    display: block;
+    color: #000000;
+    border-color: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.formulario-completo {
+    width: 50%;
+}
+.historial-completo{
+    width: 50%;
+}
+.formulario-completo{
+    text-align: center;
+
+}
+.formulario-ejercicio{
+    padding-top: 9%;
+    padding-bottom: 5%;
+}
+
+.informacion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.informacion {
+
+	border-radius: 30px;
+	padding: 10px;
+
+}
+#inicio, #fin{
+    margin-bottom: 15px;
+	border-radius: 30px;
+	padding: 10px 60px; 
+}
+#fecha{
+	border-radius: 30px;
+	padding: 10px 40px; 
+}
+
+#nombre, #tipo{
+    margin-bottom: 15px;
+	border-radius: 30px;
+	padding: 10px; 
+}
+.boton-time button{
+    padding: 15PX;
+}
+.fecha input{
+    padding-left: 62px;
+}
+
+.historial{
+    padding-top: 80px;
+
+}
+
+.historial-completo{
+    padding-top: 5.5%;
+
+}
+
+
+
+footer{
+    padding-top: 3%;
+}
+
+
+.titulo-contacto{
+    text-align: center;
+}
+
+
+.footer-logo{
+    width: 50%;
+	padding-left:3%;
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+
+.contacto a{
+	padding-left: 2%;
+	cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+ }
+ 
+
+ .contacto img{
+	width:6%;
+	}
+
+
+
+
+@media screen and (max-width: 767px){
+
+    nav{
+		width: 100%;
+        position: relative;
+	}
+
+    .nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+    .nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+
+    .menu-horizontal{
+		padding: 0px;
+		
+	}
+    
+
+    .menu-horizontal > li > a{
+		padding: 0px ;
+	
+		
+	}
+
+    .menu-horizontal > li {
+		width: 20%;
+		
+	}
+
+    .menu-horizontal li:hover .menu-vertical{
+		margin-top: 5px;
+	}
+    .banner-ejercicios{
+        padding: 100px;
+    }
+    .banner-ejercicios h1{
+        margin: 5%;
+        padding-bottom: 10px;
+
+    }
+
+
+
+    .formulario-ejercicio{
+        width: 100%;
+        padding-top: 5%;
+
+    }
+
+    
+    .historial-completo{
+    width: 100%;
+    }
+    .formulario-completo{
+        width: 100%;
+    }
+    .reset, .boton-registrar-ejercicio{
+       width: 50%; 
+       padding-top: 30px;
+
+    }
+    .historial h1{
+        text-align: center;
+    }
+    .registros p{
+        margin-left: 30%;
+    }
+    .registros select{
+        margin-left: 20%;
+    }
+    .registros button{
+        margin-left: 31%;
+    }
+
+    .boton-registrar-ejercicio{
+        padding-left: 22%;
+    }
+
+    .historial {
+        width: 100%;
+    }
+    .historial h1{
+        margin: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .footer{
+		width: 100%;
+	}
+
+
+    .footer-logo h6{
+		display: none;
+	}
+
+    .footer-logo{
+		width: 15%;
+		padding-left: 0px;
+	}
+
+    .footer-logo img{
+		width: 120px;
+	}
+
+    .contacto{
+		width: 85%;
+		padding-left: 100px;
+	
+	}
+
+    .contacto img{
+		width: 33px;
+ 
+
+	}
+
+    .titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+
+	}
+}

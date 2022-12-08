@@ -1,0 +1,345 @@
+div{
+	box-sizing: border-box;
+}
+
+.capa-display{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#display-image{
+	width:100%;
+	height: 200px;
+	border: 1px solid black;
+	background-position: center;
+	background-size: cover;
+  }
+
+.mensaje{
+	color: black;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+  
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+	position: fixed;
+}
+	
+
+.logo{
+	width: 100px;
+}
+
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 1.5px;
+}
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+.seccion{
+	width: 50%;
+	margin-top: 6%;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+.banner-1{
+	padding-bottom: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner-1 p{
+	margin-top: 0px;
+}
+
+.capa-display{
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 20px;
+}
+
+#display-image{
+	width:100%;
+	height: 200px;
+	border: 1px solid black;
+	background-position: center;
+	background-size: cover;
+  }
+.boton-guardar, .boton-cancelar {
+	background-color: white;
+	border-radius: 30px;
+	color: #000000;
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 2%;
+}
+.boton-guardar:hover, .boton-cancelar:hover {
+    color:  black;
+	transition-duration: 100ms;
+	background-color: #09CaDE;;
+}
+.boton-guardar input, .boton-cancelar input {
+    text-decoration: none;
+    color: #000000;
+}
+mark{
+	border-radius: 20px;
+	background: linear-gradient(90deg, rgb(12, 235, 243) 0%, rgb(9, 106, 197) 100%);
+	padding: 5px;
+	text-align: center;
+}
+footer{
+    padding-top: 3%;
+	
+}
+.info{
+	width: 100%;
+	text-align: center;
+	color: #000000;
+}
+.seccion input[type=text],[type=date],[type=number],[type=submit], [type=reset] {
+	width: 40%;
+	border-radius: 30px;
+	padding: 10px 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+#genero{
+	width: 40%;
+	border-radius: 30px;
+	padding: 10px 10px;
+	text-align: center;
+	border: 1px solid black;
+
+}
+.seccion select{
+	width: 15%;
+	border-radius: 30px;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.titulo-contacto {
+    text-align: center;
+    border-radius: 10px;
+	color: black;
+}
+
+.footer-logo{
+    width: 50%;
+	padding-left: 3%;
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+.contacto a{
+   padding-left: 2%;
+   cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+}
+
+.contacto img{
+    width: 6%;
+}
+
+@media screen and (max-width: 767px){
+	nav{
+		width: 100%;
+	}
+
+	.nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+	
+	
+	.menu-horizontal{
+		padding: 0px;
+		
+	}
+	.menu-horizontal > li > a{
+		padding: 0px ;
+	
+		
+	}
+	.menu-horizontal > li {
+		width: 20%;
+		
+	}
+	.menu-horizontal li:hover .menu-vertical{
+		margin-top: 5px;
+	}
+	
+	.seccion{
+		width: 50%;
+	}
+
+	.seccion{
+		width: 100%;
+	}
+	.capa-display{
+		padding-top:20px;
+		padding-right: 80px;
+		padding-left: 80px;
+	}
+
+	#display-image{
+		width: 100%;
+	}
+
+	.seccion input[type=text],[type=date],[type=number],[type=submit], [type=reset] {
+		width: 90%;
+	}
+
+	#genero{
+		width: 90%;
+	}
+
+	
+	.footer{
+		width: 100%;
+	}
+
+
+	.footer-logo h6{
+		display: none;
+	}
+
+	.footer-logo{
+		width: 15%;
+		padding-left: 0px;
+	}
+	.footer-logo img{
+		width: 120px;
+	}
+	.contacto{
+		width: 85%;
+	}
+
+	.contacto img{
+		width: 10%;
+
+	}
+	.titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+		margin-left: 31%;
+	}
+	.boton-guardar, .boton-cancelar {
+		width: 100%;
+	}
+	.seccion input{
+		width: 90%;
+	}
+	.seccion select{
+		width: 50%;
+	}
+}

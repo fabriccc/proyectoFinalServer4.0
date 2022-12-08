@@ -1,0 +1,371 @@
+div{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(0,41,223);
+    background: linear-gradient(90deg, rgba(0,41,223,1) 0%, rgba(201,60,16,1) 100%);*/
+  
+
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    background: linear-gradient(160deg, rgb(39, 139, 202) 0%, rgb(72, 232, 232) 30%, rgb(102, 168, 241) 100%);
+    z-index: 10000;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50%;
+    padding: 20px; 
+    padding-left: 40px; 
+
+}
+
+.logo img{
+    width: 100px;
+}
+.menu-derecha{
+    width: 50%;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.menu-derecha a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 300ms ease;
+    display:inline-flex; /*Para que se mantenga en linea y se pueda usar el hover*/
+  
+}
+
+.menu-derecha a:hover{
+    transform: scale(1.1); /*Tamano de los ancord a la hora de pasar el cursor por encima*/
+    color: white;
+}
+
+.banner-1{
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/banner-1.jpg"); /*oscurece la imagen del banner y resalta el texto blanco*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+    
+}
+
+.text-development{
+    margin-left:250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.banner-1 h1{
+    margin-left:320px;
+    margin-right: 320px;
+    border-radius: 10px;
+
+}
+
+.text-equipo{
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.equipo{
+    width: 25%;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 50px;
+   
+    
+}
+
+.equipo img{
+    width: 70%;
+    height: 55%;
+    
+    
+}
+
+.vision, .mision{
+    width: 50%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    border-radius: 2%;
+}
+
+
+.transition {
+    width: 20%;
+    transition: width 4s, height 3s, margin 1s;
+    margin: 5% auto 0;
+}
+.transition:hover{
+    width: 20%;
+    margin: 40px auto;
+}
+
+.text-servicio{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.imagen-servicios{
+    width: 50%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+
+.servicios{
+    width: 50%;
+    text-align:center;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.imagen-servicios img{
+    width: 30%;
+   
+}
+
+.text-proyecto{
+    text-align: center;
+    padding-top: 30px;
+}
+.proyecto{
+    text-align: center;
+    width: 25%;
+    position: relative;
+}
+
+.proyecto img{
+    width: 100%;
+}
+
+
+/*hover proyectos*/
+
+.hover{
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-top: 33%;
+}
+
+.hover:hover{
+    opacity: 1;
+}
+
+.proyecto:hover{
+    opacity: 10;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.button-proyectos{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-color: transparent
+}
+
+.button-proyectos a{
+    text-decoration: none;
+    color: #000000;
+}
+
+footer{
+    padding-top: 5%;
+	
+}
+
+.titulo-contacto{
+    text-align: center;
+   
+}
+
+
+.footer-logo{
+    width: 50%;
+	padding-left: 3%;
+
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+.contacto a{
+   padding-left: 2%;
+   cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+}
+
+.contacto img{
+    width: 6%;
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+
+    nav{
+        position:absolute;/*Quite el fixed ya que estaba dando un problema en la version movil*/
+    }
+  
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img{
+          width: 100px;  
+    }
+    .menu-derecha{
+       width: 100%;
+       padding: 0;
+       padding-left: 10px;
+       padding-bottom: 20px;
+    }
+
+    .menu-derecha a{
+       padding-left: 20px;
+       padding-top: 8px; 
+     }
+     
+     .equipo {
+    width: 100%;
+    }
+
+    .vision, .mision{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .text-development{
+        margin: 10px;
+ 
+    }
+    
+    .banner-1 h1{
+        margin: 10px;
+     padding-bottom: 10px;
+
+    }
+
+    .transition {
+        width: 0%;
+        transition:none;
+        margin:0;
+    }
+
+    .transition:hover{
+        transition: none;
+    }
+
+    .equipo{
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .servicios{
+        width: 100%;
+        text-align:center;
+        padding-left: 40px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        margin-top: -20px;
+    }
+
+    
+    .imagen-servicios{
+        width: 100%;
+        text-align: center;
+    }
+
+    .proyecto{
+        width: 100%;
+    }
+
+    .titulo-contacto{
+        margin:0px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .footer-logo{
+        width: 30%;
+        padding-left: 10px;
+    }
+
+    .footer-logo img{
+        width: 120px;
+    }
+    .footer-logo h6{
+        display: none;
+    }
+    .contacto{
+        width: 70%;
+        padding-left: 0px;
+        padding-left: 20px;
+    }
+
+    .contacto img{
+        width: 33px;
+    }
+
+    .banner-1{
+        background-size: cover;
+    }
+    
+}

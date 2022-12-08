@@ -1,0 +1,119 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil informacion</title>
+        <link href="../css/c-estilosPerfilInformacion.css" rel="stylesheet" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <script type="module" src="../js/main.js" defer></script>
+        <script type="module" src="../js/j-informacionUsuario.js" defer></script>
+        <script type="module" src="../js/j-cerrarSesion.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <!--LOGO DE EMPRESA Y MENU DESPEGABLE-->
+
+            <div class="wrapper">
+                <div class="nav-logo">
+                    <img src="../img/logo-empresa-cliente.png" alt="">
+                </div>
+
+                <div class="nav-menus">
+
+                    <ul class="menu-horizontal"><!--Contiene el inicio,perfil,mis actividades,progreso y contacto del menu-->
+                        <li><a href="h-subHome.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Perfil</a>
+                            <ul class="menu-vertical"><!--Contiene las secciones que se relacionan con el menu horizontal-->
+                                <li><a href="h-actualizarPerfil.html" target="_parent">Actualizar</a></li>
+                                <li><a href="h-perfil-informacion.html" target="_parent">Informacion</a></li>
+                                <li><a href="h-logros.html" target="_parent">Logros</a></li>
+                                <li><a href="h-homeInicialCliente.html" target="_parent" id="cerrar-sesion">Cerrar Sesion</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Mis actividades</a>
+                            <ul class="menu-vertical">
+                                <li><a href="h-recetas.html" target="_parent">Recetas</a></li>
+                                <li><a href="h-ayunos.html" target="_parent">Ayunos</a></li>
+                                <li><a href="h-Ejercicios.html" target="_parent">Ejercicios</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="h-subHomeProgreso.html" target="_parent">Progreso</a>
+                        </li>
+
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="perfil">
+            <p class="mensaje" id="mensaje"></p>
+            <div class="wrapper">
+                <div class="foto">
+                    <h1>Usuario</h1>
+                    <img id="foto" src="../img/icono_equipo.png">
+                </div>
+                <div class="informacion" id="informacion-usuario">
+                    <h1>Informacion general</h1>
+                    <h4>Nombre</h4>
+                    <input type="text" id="nombre" name="Nombre" placeholder="Nombre"  readonly="readonly"/><br/>
+                    <h4>Apellidos</h4>
+                    <input type="text" id="apellidos" name="Apellidos" placeholder=" Apellidos" readonly="readonly"/><br/>
+                    <h4>Nacimiento</h4>
+                    <input type="text" id="nacimiento" placeholder="Fecha de nacimiento" readonly="readonly"/><br/>
+                    <h4>Genero</h4>
+                    <input type="text" name="genero" id="genero" placeholder="Genero" readonly="readonly"/><br/>
+                    <h4>Altura</h4>
+                    <input type="number" id="altura" placeholder="altura" readonly="readonly"/><br/>
+                    <h4>Peso Actual</h4>
+                    <input type="number" id="peso" placeholder="Peso actual " readonly="readonly"/><br/>
+                </div>
+            </div>
+        </div>
+
+
+
+          <!-- SECCION PIE DE PAGINA-CONTACTO-->
+          <footer class="footer">
+
+            <div class="titulo-contacto" id="contacto"><h1>Contacto</h1></div>
+
+                <div class="wrapper">
+
+                    <div class="footer-logo">
+                        <img src="../img/logo-negro-removebg-preview.png" alt="">
+                        <h6>Derechos reservados de autor<br>Since 2022</h6>
+                    </div>
+
+                    <div class="contacto">
+                        <p>
+                            <a><img src="../img/facebook.png" alt=""></a>
+                            <a><img src="../img/instagram.png" alt=""></a>
+                            <a><img src="../img/twitter.png" alt=""></a>
+                            <a><img src="../img/telefono.png" alt=""></a>
+                        </p>
+                    </div>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link href="../css/c-registroDatos.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/j-registroDatos.js" defer></script>
+    <script type="module" src="../js/j-cerrarSesion.js" defer></script>
+</head>
+<body>
+    <nav>
+        <!--LOGO DE EMPRESA Y MENU DESPEGABLE-->
+
+        <div class="wrapper">
+            <div class="nav-logo">
+                <img src="../img/logo-empresa-cliente.png" alt="">
+            </div>
+
+            <div class="nav-menus">
+
+                <ul class="menu-horizontal"><!--Contiene el inicio,perfil,mis actividades,progreso y contacto del menu-->
+                    <li><a href="#">Inicio</a></li>
+                    <li>
+                        <a href="#">Perfil</a>
+                        <ul class="menu-vertical"><!--Contiene las secciones que se relacionan con el menu horizontal-->
+                            <li><a href="#">Actualizar</a></li>
+                            <li><a href="#">Informacion</a></li>
+                            <li><a href="#">Logros</a></li>
+                            <li><a href="h-homeInicialCliente.html" target="_parent" id="cerrar-sesion">Cerrar Sesion</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Mis actividades</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Recetas</a></li>
+                            <li><a href="#">Ayunos</a></li>
+                            <li><a href="#">Ejercicios</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Progreso</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+	</nav>
+
+
+
+
+    <!--CONTENIDO DE CADA UNO POR HACER RECETAS-EJERCICIOS-AYUNOS-PROGRESO-->
+    <div class="banner-1">
+
+
+        <form class="login-info">
+            <p class="mensaje" id="mensaje"></p>
+            <div class="wrapper">
+                <div class="partes-login">
+                    <label><b>Ingrese foto</b></label><br>
+                    <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+
+                    <div class="capa-display" >
+                        <div id="display-image"></div>
+                    </div>
+
+                </div>
+                <div class="partes-login">
+                    <label><b>Nombre</b></label><br>
+                    <input type="text" id="nombre"  placeholder="ingrese su nombre" required><br>
+                    <label><b>Apellidos</b></label><br>
+                    <input type="text" id="apellidos" placeholder="ingrese sus apellidos" required>
+                </div>
+                <div class="partes-login">
+                    <label><b>fecha Nacimiento</b></label><br>
+                    <input type="date" id="nacimiento" required>
+                </div>
+
+            </div>
+            <div class="wrapper">
+                <div class="partes-login">
+                    <select id="genero">
+                        <option>Seleccionar genero</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select>
+                </div>
+                <div class="partes-login">
+                    <label><b>Peso</b></label><br>
+                    <input type="number" id="peso" placeholder="ingrese su peso en kg" required>
+                </div>
+                <div class="partes-login partes-login g">
+                    <label><b>Altura</b></label><br>
+                    <input type="number" id="altura" placeholder="ingrese su altura en cm" required>
+                </div>
+            </div>
+            <button type="button" id="btn-aceptar" class="boton-aceptar">Aceptar</button>
+            <button type="button"  class="boton-cancelar">Cancelar</button>
+
+        </form>
+
+    </div>
+
+      <!-- SECCION PIE DE PAGINA-CONTACTO-->
+      <footer class="footer">
+
+        <div class="titulo-contacto" id="contacto"><h1>Contacto </h1></div>
+
+            <div class="wrapper">
+
+                <div class="footer-logo">
+                    <img src="../img/logo-negro-removebg-preview.png" alt="">
+                    <h6>Derechos reservados de autor<br>Since 2022</h6>
+                </div>
+
+                <div class="contacto">
+                    <p>
+                        <a><img src="../img/facebook.png" alt=""></a>
+                        <a><img src="../img/instagram.png" alt=""></a>
+                        <a><img src="../img/twitter.png" alt=""></a>
+                        <a><img src="../img/telefono.png" alt=""></a>
+                    </p>
+                </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

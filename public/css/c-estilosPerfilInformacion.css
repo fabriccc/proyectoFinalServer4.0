@@ -1,0 +1,307 @@
+div{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+	background-color:   #C93C10;
+	width: 100%;
+    position: fixed;
+}
+	
+
+.logo{
+	width: 100px;
+}
+
+.nav-logo{
+	width: 50%;
+	padding-left: 20px;
+	margin-bottom: -24px;
+
+}
+
+.nav-logo img{
+	width: 180px;
+}
+
+.nav-menus{
+	width: 50%;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-bottom: 35px;
+	
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50px;
+	
+}
+
+.menu-horizontal > li > a:hover{
+	color: #09CaDE;
+	transition: all 0.5s;
+	
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block; /*Para que no se mueva del lugar al pasar el cursor*/
+	margin-top: 1.5px;
+}
+.menu-vertical li:hover{
+	transition: all 0.60s;
+    transform: scale(1.1);
+    
+	
+}
+
+.menu-vertical li a:hover{
+	transition: all 0.70s;
+    color: #09CaDE;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+	text-decoration: none;
+	text-align: start;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+.foto, .informacion{
+    width: 50%;
+}
+
+.informacion{
+    padding-top: 50px;
+    padding-bottom: 50px;
+	text-align: center;
+	padding-right: 300px;
+}
+
+.foto{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+	padding-left: 250px;
+}
+
+.perfil{
+	padding-top: 200px;
+}
+
+.informacion input{
+    margin-bottom: 15px;
+	border-radius: 30px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.foto img{
+    width: 270px;
+    height: 260px;
+	border-radius: 30px;
+}
+
+
+
+footer{
+    padding-top: 3%;
+}
+
+
+.titulo-contacto{
+    text-align: center;
+}
+
+
+.titulo-contacto mark{
+	background: #000000;
+	border-radius: 10px;
+	color: aliceblue;
+}
+
+.footer-logo{
+    width: 50%;
+	padding-left:3%;
+}
+
+.footer-logo img{
+    width: 20%;
+}
+
+
+.contacto{
+    width: 50%;
+    padding-top: 50px;
+	text-align: right;
+	padding-right: 3%;
+}
+
+
+.contacto a{
+	padding-left: 2%;
+	cursor: pointer; /*Para que salga una manita al posicionar el cursor en el icono de contacto*/
+ }
+ 
+
+ .contacto img{
+	width:6%;
+	}
+
+
+
+
+
+@media screen and (max-width: 767px){
+	nav{
+		width: 100%;
+        position: relative;
+	}
+
+	.nav-logo{
+		width: 100%;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.nav-menus{
+		width: 100%;
+		padding-left: 0px;
+		padding: 0px;
+	}
+	
+	
+	.menu-horizontal{
+		padding: 0px;
+		
+	}
+	.menu-horizontal > li > a{
+		padding: 0px ;
+	
+		
+	}
+	.menu-horizontal > li {
+		width: 20%;
+		
+	}
+
+	.menu-horizontal li:hover .menu-vertical{
+		margin-top: 5px;
+	}
+
+
+    .titulo h1{
+        margin: 10px;
+    }
+
+    .foto{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+		padding-top: 0px;
+    }
+
+	.perfil{
+		padding-top: 20px;
+	}
+  
+
+    .informacion h1{
+        text-align: center; 
+        padding-top: 0px;
+}
+
+    .informacion{
+		padding-top: 0px;
+        text-align: center;
+		width: 100%;
+		padding-right: 0px;
+    }
+
+	
+	.footer{
+		width: 100%;
+	}
+
+
+	.footer-logo h6{
+		display: none;
+	}
+
+
+	.footer-logo img{
+		width: 120px;
+	}
+	
+	.footer-logo{
+		width: 15%;
+		padding-left: 0px;
+	}
+
+	.contacto{
+		width: 85%;
+		padding-left: 25%;
+	
+	}
+
+	.contacto img{
+		width: 33px;
+ 
+
+	}
+
+    .titulo-contacto mark{
+		border-radius: 10px;
+		color: aliceblue;
+
+	}
+
+
+}
